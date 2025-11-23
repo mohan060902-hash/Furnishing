@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHJEDN1TZ2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -20,7 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Furnishing - Modern Furniture for Your Home</title>
+    <title>Apex Furnishing - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -247,8 +247,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: #666;
         }
 
-        /* Products Section */
-        .products {
+        /* Products Preview */
+        .products-preview {
             padding: 5rem 0;
             background-color: #f8f9fa;
         }
@@ -273,8 +273,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         .product-image {
             height: 200px;
-            background-size: cover;
-            background-position: center;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 3rem;
         }
 
         .product-info {
@@ -302,59 +306,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-weight: 700;
             color: var(--secondary);
             font-size: 1.2rem;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 5rem 0;
-            background-color: white;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background-color: var(--light);
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            color: #555;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        .author-info h4 {
-            margin-bottom: 0.2rem;
-            color: var(--dark);
-        }
-
-        .author-info p {
-            color: #666;
-            font-size: 0.9rem;
         }
 
         /* CTA Section */
@@ -473,10 +424,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
+   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKLF62RW"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
     <!-- Header -->
     <header>
         <div class="container header-container">
@@ -486,17 +438,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="#">Collections</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#" class="cta-button">Shop Now</a>
+            <a href="products.html" class="cta-button">Shop Now</a>
         </div>
     </header>
-  
 
     <!-- Hero Section -->
     <section class="hero">
@@ -504,7 +455,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2>Transform Your Space with Elegant Furniture</h2>
             <p>Discover our exclusive collection of premium furniture that combines style, comfort, and functionality for your home.</p>
             <div class="hero-buttons">
-                <a href="#" class="btn-primary">Explore Collections</a>
+                <a href="products.html" class="btn-primary">Explore Collections</a>
                 <a href="#" class="btn-secondary">Book Consultation</a>
             </div>
         </div>
@@ -550,8 +501,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products">
+    <!-- Products Preview Section -->
+    <section class="products-preview">
         <div class="container">
             <div class="section-title">
                 <h2>Featured Products</h2>
@@ -559,86 +510,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="products-grid">
                 <div class="product-card">
-                    <div class="product-image" style="background-color: #e9ecef;"></div>
+                    <div class="product-image">
+                        <i class="fas fa-couch"></i>
+                    </div>
                     <div class="product-info">
                         <h3>Modern Sofa Set</h3>
                         <p>Comfortable 3-seater sofa with premium fabric and elegant design.</p>
                         <div class="product-price">
                             <span class="price">$899</span>
-                            <a href="#" class="cta-button">Add to Cart</a>
+                            <a href="products.html" class="cta-button">View Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image" style="background-color: #e9ecef;"></div>
+                    <div class="product-image">
+                        <i class="fas fa-chair"></i>
+                    </div>
                     <div class="product-info">
                         <h3>Wooden Dining Table</h3>
                         <p>Solid oak dining table that seats 6 people comfortably.</p>
                         <div class="product-price">
                             <span class="price">$649</span>
-                            <a href="#" class="cta-button">Add to Cart</a>
+                            <a href="products.html" class="cta-button">View Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image" style="background-color: #e9ecef;"></div>
+                    <div class="product-image">
+                        <i class="fas fa-bed"></i>
+                    </div>
                     <div class="product-info">
                         <h3>Ergonomic Office Chair</h3>
                         <p>Adjustable office chair with lumbar support for all-day comfort.</p>
                         <div class="product-price">
                             <span class="price">$299</span>
-                            <a href="#" class="cta-button">Add to Cart</a>
+                            <a href="products.html" class="cta-button">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Our Customers Say</h2>
-                <p>Don't just take our word for it - hear from our satisfied customers</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "The quality of furniture from Apex Furnishing exceeded my expectations. The delivery was prompt and the assembly was straightforward."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JS</div>
-                        <div class="author-info">
-                            <h4>Jessica Smith</h4>
-                            <p>Homeowner</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "I've furnished my entire apartment with Apex products. Their customer service is exceptional and the furniture has held up beautifully."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MR</div>
-                        <div class="author-info">
-                            <h4>Michael Roberts</h4>
-                            <p>Interior Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "The modern sofa set I purchased has completely transformed my living room. It's both stylish and incredibly comfortable."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SD</div>
-                        <div class="author-info">
-                            <h4>Sarah Davis</h4>
-                            <p>Architect</p>
-                        </div>
-                    </div>
-                </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="products.html" class="btn-primary">View All Products</a>
             </div>
         </div>
     </section>
@@ -648,7 +560,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
             <h2>Ready to Transform Your Home?</h2>
             <p>Sign up for our newsletter to receive exclusive offers and design inspiration</p>
-            <a href="#" class="btn-primary">Subscribe Now</a>
+            <a href="products.html" class="btn-primary">Shop Now</a>
         </div>
     </section>
 
@@ -669,11 +581,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="footer-column">
                     <h3>Shop</h3>
                     <ul>
-                        <li><a href="#">Living Room</a></li>
-                        <li><a href="#">Bedroom</a></li>
-                        <li><a href="#">Dining Room</a></li>
-                        <li><a href="#">Office</a></li>
-                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="products.html">Living Room</a></li>
+                        <li><a href="products.html">Bedroom</a></li>
+                        <li><a href="products.html">Dining Room</a></li>
+                        <li><a href="products.html">Office</a></li>
+                        <li><a href="products.html">Outdoor</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
